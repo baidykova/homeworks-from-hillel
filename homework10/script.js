@@ -14,7 +14,7 @@ console.log(result);
 
 // 3 task
 for(let i = 1; i <= 10; i++) {
-	console.log(`${i}: = ${i*7}`);
+	console.log(`${i} * 7 = ${i*7}`);
 }
 
 // 4 task
@@ -81,6 +81,8 @@ for(let i = 0; i <= naturalNumber2; i ++) {
 console.log(resultOfSum);
 
 // 12 task
+
+// 1 variant
 let table = '';
 for(let i = 1; i <= 10; i++) {
 	for(let j = 1; j <= 10; j++) {
@@ -89,5 +91,13 @@ for(let i = 1; i <= 10; i++) {
   table += (i == 10) ? '' : '\n';
 }
 console.log(table);
+
+// 2 variant
+for(let i = 1; i <= 10; i++) {
+	for(let j = 1; j <= 10; j++) {
+  		console.log(`${i} * ${j} = ${i*j}`);
+ 	}
+ console.log();
+}
 
 
