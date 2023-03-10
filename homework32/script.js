@@ -1,3 +1,7 @@
+/*
+Создать цепочку промисов (длинной минимум в 3) - свой распорядок дня
+например (brushTeeth.then(() => dosmthelse.then(())
+*/
 const wakeUp = new Promise((resolve, reject) => {
   setTimeout(() => {
     console.log("Waking up at 6:00 am.");
@@ -7,6 +11,7 @@ const wakeUp = new Promise((resolve, reject) => {
 
 
 const breakfast = wakeUp.then((result) => {
+  console.log(result);
   console.log("Preparing breakfast.");
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -18,6 +23,7 @@ const breakfast = wakeUp.then((result) => {
 
 
 const work = breakfast.then((result) => {
+  console.log(result);
   console.log("Preparation for work.");
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -29,6 +35,7 @@ const work = breakfast.then((result) => {
 
 
 const dinner = work.then((result) => {
+  console.log(result);
   console.log("Cooking dinner.");
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -40,6 +47,7 @@ const dinner = work.then((result) => {
 
 
 dinner.then((result) => {
+  console.log(result);
   console.log("Time to relax!");
 }).catch((error) => {
   console.log(error);
