@@ -1,0 +1,35 @@
+.slider-container {
+  position: relative;
+}
+
+.slider-image {
+  width: 50%;
+  height: 50%;
+}
+
+.next-button {
+  transform: translateX(-921%);
+}
+
+.prev-button {
+  transform: translateY(-50%);
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  padding: 10px 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
