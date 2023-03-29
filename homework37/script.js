@@ -1,6 +1,9 @@
 let url1 = 'en.cppreference.com/w/';
 let url2 = 'lms.ithillel.ua/groups/63341eb7f91a564d59df2794/homeworks/6407a9ea873d7a7e0573a120'; 
 
+const button1 = document.getElementById("button1");
+const button2 = document.getElementById("button2");
+
 document.addEventListener('DOMContentLoaded', () => {
 	button1.addEventListener('click', () => {
 		if (!url1.startsWith('http://') && !url1.startsWith('https://'))	{
