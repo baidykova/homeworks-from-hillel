@@ -12,6 +12,7 @@ function generateArrayList(array) {
   return arrayList;
 }
 
+
 const arr = [1, 2, [1.1, 1.2, 1.3], 3];
 const arrList = generateArrayList(arr);
 document.body.appendChild(arrList);
