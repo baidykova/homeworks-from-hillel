@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="container body">
+    <div class="product">
+        <img class="pumpkin-earring" src="./image/earrings.png">
+        <div class="product-description">
+        <h2 class="product-name">Сережки "Гарбузова карета"</h2>
+        <p class="product-article">Створіть яскравий образ із сережками-пусетами "Гарбузова карета" з колекції "Попелюшка" Disney. Цю довершену вручну
+        срібну прикрасу створено на честь 70-річчя з моменту виходу на екрани мультфільму "Попелюшка" Disney. Кожну сережку
+        виконано у формі гарбузової карети, центральний елемент якої — синій камінець в оточенні прозорих кубічних оксидів
+        цирконію.</p>
+        <p class="product-price">Ціна: 2395 грн</p>
+        <button id="buy-button" class="buttons">Купити</button>
+        </div>
+    </div>
+    
+    <div id="order-form">
+        <h3 class="form-name">Форма оформлення замовлення</h3>
+        <form id="form">
+            <label for="name">ПІБ покупця:</label>
+            <input class="view" type="text" id="name-input" required>
+            <label class="star">*</label><br><br>
+    
+            <label for="city">Місто:</label>
+            <select class="view" id="city-select" required>
+                <option value="">Оберіть місто</option>
+                <option value="Київ">Київ</option>
+                <option value="Харків">Харків</option>
+                <option value="Одеса">Одеса</option>
+                <option value="Львів">Львів</option>
+            </select>
+            <label class="star">*</label><br><br>
+    
+            <label for="postOffice">Склад Нової пошти для надсилання:</label>
+            <input class="view" type="text" id="post-office-select" required>
+            <label class="star">*</label><br><br>
+    
+            <label for="payment">Післяплата або оплата банківською карткою:</label>
+            <select class="view" id="payment-select" required>
+                <option value="">Оберіть спосіб оплати</option>
+                <option value="Післяплата">Післяплата</option>
+                <option value="Банківська картка">Банківська картка</option>
+            </select>
+            <label class="star">*</label><br><br>
+    
+            <label for="quantity">Кількість продукції, що купується:</label>
+            <input class="view" type="number" id="quantity-input" required>
+            <label class="star">*</label><br><br>
+    
+            <label for="comment">Коментар до замовлення:</label><br>
+            <textarea class="view" id="comment-input"></textarea><br><br>
+    
+            <button class="buttons" type="submit" id="submit-button">Підтвердити замовлення</button>
+        </form>
+    </div>
+    
+    <div id="order-details">
+        <h3 class="information">Інформація про замовлення</h3>
+        <p id="product-details"></p>
+        <p id="delivery-details"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
