@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<form id="order-form">
+		<fieldset>
+			<legend>Реєстрація</legend>
+			<p>
+				Ваше ім'я та прізвище: *
+				<label>
+					<input type="text" id="name-input" required autofocus>
+				</label>
+			</p>
+			<p>
+				Дата народження: *
+				<label>
+					<input type="date" id="birth-input" required>
+				</label>
+			</p>
+			<p>
+				<label>
+					<b>Стать:</b>
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="radio" name="sex" value="жіноча" id="sex-male-input"> жіноча
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="radio" name="sex" value="чоловіча" id="sex-female-input">чоловіча
+				</label>
+			</p>
+			<p>
+				<label>
+					Місто:
+					<select id="city-select">
+						<option>Київ</option>
+						<option>Львів</option>
+						<option>Одеса</option>
+						<option>Рівне</option>
+					</select>
+				</label>
+			</p>
+			<label>Адреса:</label><br>
+			<p><textarea id="adress-input"></textarea></p>
+			<p>
+				<label>
+					<b>Мови, якими володієш: </b>
+				</label>
+			</p>
+			<p>
+				<label for="en"><input type="checkbox" name="language" value="англійська" id="en">англійська</label>
+			</p>
+			<p>
+				<label for="ua"><input type="checkbox" name="language" value="українська" id="ua">українська</label>
+			</p>
+			<p>
+				<label for="fr"><input type="checkbox" name="language" value="французька" id="fr">французька</label>
+			</p>
+			<p>
+				<label for="jp"><input type="checkbox" name="language" value="японська" id="jp">японська</label>
+			</p>
+			<p>
+				<label for="de"><input type="checkbox" name="language" value="німецька" id="de">німецька</label>
+			</p>
+		</fieldset>
+		<button type="button" id="save-button">Зберегти</button>
+	</form>
+	<table id="table">
+		<thead>
+			<tr>
+				<th>Назва</th>
+				<th>Дані користувача</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Ім'я та Прізвище:</td>
+				<td id="name"></td>
+			</tr>
+			<tr>
+				<td>Дата народження:</td>
+				<td id="birth"></td>
+			</tr>
+			<tr>
+				<td>Стать:</td>
+				<td id="sex"></td>
+			</tr>
+			<tr>
+				<td>Місто:</td>
+				<td id="city"></td>
+			</tr>
+			<tr>
+				<td>Адреса:</td>
+				<td id="adress"></td>
+			</tr>
+			<tr>
+				<td>Мови, якими володіє:</td>
+				<td id="language"></td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="script.js"></script>
+</body>
+
+</html>
