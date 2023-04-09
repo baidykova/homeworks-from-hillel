@@ -1,0 +1,38 @@
+.body {
+  background-color: #ffffe090;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  display: block;
+}
+.categories-items {
+  text-decoration: none;
+  color: #00000090;
+}
+
+.category-block {
+  margin: 20px;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+#my-order {
+  cursor: pointer;
+}
+
+#my-orders {
+  display: block;
+}
