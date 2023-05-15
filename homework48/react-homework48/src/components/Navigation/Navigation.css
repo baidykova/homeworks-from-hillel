@@ -1,0 +1,11 @@
+.links {
+  list-style-type: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: normal;
+  font-weight: 700;
+}
